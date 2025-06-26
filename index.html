@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>shanmuk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mobile">
+        <div class="bezel">
+            <div class="screen">
+                <div class="group connect" tabindex="0">
+                    <div onclick="window.open(`https://github.com/shanmukn21`, '_blank')" class="github link"
+                        style="background-image: url(img/github.png); background-size:cover">
+                        <p class="name">github</p>
+                    </div>
+                    <div onclick="window.open(`https://www.linkedin.com/in/shanmukn21/`, '_blank')" class="in link"
+                        style="background-image: url(img/in.png); background-size:cover">
+                        <p class="name">linkedin</p>
+                    </div>
+                    <div onclick="window.open(`https://x.com/shanmuk_cool`, '_blank')" class="x link"
+                        style="background: white;background-image: url(img/x.png); background-size:cover;">
+                        <p class="name">x</p>
+                    </div>
+                    <div id="subGroup">
+                        <div onclick="window.open(`mailto:shanmukn21@gmail.com`, '_blank')" class="gmail link"
+                            style="background-image: url(img/gmail.png); background-size:cover">
+                            <p class="name">gmail</p>
+                        </div>
+                        <div onclick="window.open(`tel:+917842251453`, '_blank')" class="call link"
+                            style="background-image: url(img/call.png); background-size:cover">
+                            <p class="name">call</p>
+                        </div>
+                        <div onclick="window.open(` https://wa.me/7842251453`, '_blank')" class="whatsapp link"
+                            style="background-image: url(img/whatsapp.png); background-size:cover">
+                            <p class="name">whatsapp</p>
+                        </div>
+                    </div>
+                    <p id="name">connect</p>
+                </div>
+                <div class="group myWork" tabindex="0">
+                    <div class="spotify app" tabindex="0"
+                        style="background-image: url(img/spotify.png); background-size:cover;background-color:black">
+                        <p class="name">spotify</p>
+                    </div>
+                    <div class="RubiksCube app" tabindex="0"
+                        style="background-image: url(img/RubiksCube.png); background-size:cover">
+                        <p class="name">RubiksCube</p>
+                    </div>
+                    <div class="ludo app" tabindex="0"
+                        style="background-image: url(img/ludo.png); background-size:cover">
+                        <p class="name">ludo</p>
+                    </div>
+                    <div id="subGroup">
+                        <div class="ttt app" style="background-image: url(img/ttt.png); background-size:cover">
+                            <p class="name">TicTacToe</p>
+                        </div>
+                        <div class="simonsays app"
+                            style="background-image: url(img/simonsays.png); background-size:cover">
+                            <p class="name">simonsays</p>
+                        </div>
+                        <div class="calculator app"
+                            style="background-image: url(img/calculator.png); background-size:cover">
+                            <p class="name">calculator</p>
+                        </div>
+                        <div class="To-Do app" style="background-image: url(img/To-Do.png); background-size:cover">
+                            <p class="name">ToDo</p>
+                        </div>
+                        <div class="youtube app" style="background-image: url(img/youtube.png); background-size:cover">
+                            <p class="name">youtube</p>
+                        </div>
+                        <div class="google app" style="background-image: url(img/google.png); background-size:cover;">
+                            <p class="name">google</p>
+                        </div>
+                        <div class="instagram app"
+                            style="background-image: url(img/instagram.png); background-size:cover;">
+                            <p class="name">instagram</p>
+                        </div>
+                    </div>
+                    <p id="name">myWork</p>
+                </div>
+                <div class="icon skills" style="background-image: url(img/skill.png); background-size:75%;">
+                    <p class="name">Skills</p>
+                </div>
+                <div class="icon self" style="background-image: url(img/profile.png); background-size:cover;">
+                    <p class="name">self</p>
+                </div>
+                <div class="icon tools" style="background-image: url(img/tools.png); background-size:75%;">
+                    <p class="name">tools</p>
+                </div>
+                <div class="icon projects" style="background-image: url(img/projects.jpg); background-size:cover;">
+                    <p class="name">projects</p>
+                </div>
+                <div class="icon certificates" style="background-image: url(img/certify.jpeg); background-size:75%;">
+                    <p class="name">certificates</p>
+                </div>
+                <span id="fullscreen">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path
+                            d="M120-120v-200h80v120h120v80H120Zm520 0v-80h120v-120h80v200H640ZM120-640v-200h200v80H200v120h-80Zm640 0v-120H640v-80h200v200h-80Z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+            <div class="preview">
+                <svg class="loading" width="100" height="30" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg"
+                    fill="white">
+                    <circle cx="15" cy="15" r="10">
+                        <animate attributeName="r" from="10" to="10" begin="0s" dur="0.8s" values="10;5;10"
+                            calcMode="linear" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1"
+                            calcMode="linear" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="50" cy="15" r="10">
+                        <animate attributeName="r" from="10" to="10" begin="0.2s" dur="0.8s" values="10;5;10"
+                            calcMode="linear" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" from="1" to="1" begin="0.2s" dur="0.8s" values="1;.5;1"
+                            calcMode="linear" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="85" cy="15" r="10">
+                        <animate attributeName="r" from="10" to="10" begin="0.4s" dur="0.8s" values="10;5;10"
+                            calcMode="linear" repeatCount="indefinite" />
+                        <animate attributeName="fill-opacity" from="1" to="1" begin="0.4s" dur="0.8s" values="1;.5;1"
+                            calcMode="linear" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+                <div class="data">
+                    <div class="myskills">
+                        <h2>skills</h2>
+                        <div class="Technolgies">
+                            <h3>Technologies</h3>
+                            <div class="mongodb">
+                                <p class="name">mongodb</p>
+                            </div>
+                            <div class="express">
+                                <p class="name">express</p>
+                            </div>
+                            <div class="react">
+                                <p class="name">react</p>
+                            </div>
+                            <div class="node">
+                                <p class="name">node</p>
+                            </div>
+                            <div class="html">
+                                <p class="name">html</p>
+                            </div>
+                            <div class="css">
+                                <p class="name">css</p>
+                            </div>
+                            <div class="js">
+                                <p class="name">javascript</p>
+                            </div>
+                        </div>
+                        <div class="Deployements">
+                            <h3>Deployements</h3>
+                            <div class="github">
+                                <p class="name">github</p>
+                            </div>
+                            <div class="render">
+                                <p class="name">render</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myself">
+                        <h2>About</h2>
+                        <div>
+                            <div class="card">
+                                <div class="profile"></div>
+                                <div class="info">
+                                    <h3>👋🏻
+                                        <div class="typewriter">
+                                            <p id="typingText"> I'm Shanmuk</p>
+                                        </div>
+                                    </h3>
+                                    <p>
+                                        A frontend developer who
+                                        loves turning ideas into reality
+                                        with code. I create digital
+                                        experiences that delight users.
+                                        Always excited for new challenges ,
+                                        Im here to make your ideas come
+                                        to life in the most fun and user-
+                                        friendly way. Let's build
+                                        something awesome together!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mytools">
+                        <h2>Tools</h2>
+                        <div>
+                            <div class="tool">
+                                <h3>Git & GitHub</h3>
+                                <div class="git"></div>
+                                <p>Git and GitHub are my coding sidekicks! Together,
+                                    magical duo that helps me changes,
+                                    effortlessly, md showcase my digital manerpieces to the
+                                    world. From tiny tweaks massive werhauls, they've got
+                                    my back!
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="tool">
+                                <h3>VS Code & Android Studio</h3>
+                                <div class="vscode"></div>
+                                <p>
+                                    VS Code and Android Studio my codng powerhouses!
+                                    These Sleek IDES are where my ideas come to With their
+                                    intelligent code completion, lightning fast debugging, and
+                                    endless customization options, they're my secnt weapons
+                                    for crafting extraordinary apps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myprojects">
+                        <h2>Projects</h2>
+                        <div>
+                            <div class="spotify screenShot" style="background-image: url(img/screenshot/spotify.png);">
+                            </div>
+                            <div class="RubiksCube screenShot"
+                                style="background-image: url(img/screenshot/RubiksCube.png);"></div>
+                            <div class="ludo screenShot" style="background-image: url(img/screenshot/ludo.png);"></div>
+                            <div class="ttt screenShot" style="background-image: url(img/screenshot/ttt.png);"></div>
+                            <div class="simonsays screenShot"
+                                style="background-image: url(img/screenshot/simonsays.png);"></div>
+                            <div class="calculator screenShot"
+                                style="background-image: url(img/screenshot/calculator.png);"></div>
+                            <div class="To-Do screenShot" style="background-image: url(img/screenshot/To-Do.png);">
+                            </div>
+                            <div class="youtube screenShot" style="background-image: url(img/screenshot/youtube.png);">
+                            </div>
+                            <div class="google screenShot" style="background-image: url(img/screenshot/google.png);;">
+                            </div>
+                            <div class="instagram screenShot"
+                                style="background-image: url(img/screenshot/instagram.png);;"></div>
+                        </div>
+                    </div>
+                    <div class="mycertificates">
+                        <h2>Certifications</h2>
+                        <div></div>
+                    </div>
+                </div>
+                <iframe class="mobileWeb" src="" frameborder="0"></iframe>
+                <div class="exit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desktop">
+        <div class="home hero">
+            <div class="aboutme">
+                <h1>👋🏻 I'm Shanmuk</h1>
+                <h2>A Frontend Developer</h2>
+                <h5>
+                    I create clean and interactive websites that focus on good design and a smooth user experience.
+                </h5>
+            </div>
+            <div class="photosection">
+                <div class="passportphoto"></div>
+            </div>
+            <div class="quickconnect">
+                <a href='https://github.com/shanmukn21' class="github link"
+                    style="background-image: url(img/github.png); background-size:cover" target="_blank">
+                </a>
+                <a href='https://www.linkedin.com/in/shanmukn21/' class="in link"
+                    style="background-image: url(img/in.png); background-size:cover" target="_blank">
+                </a>
+                <a href='https://x.com/shanmuk_cool' class="x link"
+                    style="background: white;background-image: url(img/x.png); background-size:cover;" target="_blank">
+                </a>
+                <a href='mailto:shanmukn21@gmail.com' class="gmail link"
+                    style="background-image: url(img/gmail.png); background-size:cover" target="_blank">
+                </a>
+            </div>
+            <div class="skillsWeb">
+                <div class="Technolgies">
+                    <h3>Technologies</h3>
+                    <div>
+                        <div class="mongodb">
+                            <p class="name">mongodb</p>
+                        </div>
+                        <div class="express">
+                            <p class="name">express</p>
+                        </div>
+                        <div class="react">
+                            <p class="name">react</p>
+                        </div>
+                        <div class="node">
+                            <p class="name">node</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="html">
+                            <p class="name">html</p>
+                        </div>
+                        <div class="css">
+                            <p class="name">css</p>
+                        </div>
+                        <div class="js">
+                            <p class="name">javascript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <h3 class="projectWeb">Projects</h3>
+            <div class="description-main">
+                <div class="description">
+                    <div class="description-container">
+                        <div id="spotify">
+                            <h1>Spotify Clone</h1>
+                            <p>Developed a web-based music streaming interface mimicking Spotify to demonstrate
+                                skills
+                                in
+                                building interactive media applications.</p>
+                            <p>Features a music player with play/pause controls, playlist browsing, and a search bar
+                                for
+                                songs or artists.</p>
+                            <p>Fully responsive design ensures seamless usability across desktops, tablets, and
+                                mobile
+                                devices.
+                            </p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 68.7%;background-color:#ff5722"></div>
+                                        <div style="width: 16%;background-color:#2196f3"></div>
+                                        <div style="width: 15.3%;background-color:#f7df1e"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>68.7%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>16.0%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>15.3%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/spotify" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/spotify" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="RubiksCube">
+                            <h1>Rubik's Cube Simulator</h1>
+                            <p>Created a 3D Rubik’s Cube simulator to showcase proficiency in 3D graphics and
+                                interactive
+                                web development.</p>
+                            <p>Offers interactive cube rotations via keyboard controls, a solver algorithm for
+                                solutions,
+                                and a reset option; rendered in 3D.</p>
+                            <p>Responsive layout adapts to various screen sizes, with optimized controls for desktop
+                                and
+                                mobile users.</p>
+                            
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 85.1%;background-color:#f7df1e"></div>
+                                        <div style="width: 11.3%;background-color:#2196f3"></div>
+                                        <div style="width: 3.6%;background-color:#ff5722"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>85.1%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>11.3%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>3.6%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/RubiksCube" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/RubiksCube" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>    
+                        </div>
+
+                        <div id="ludo">
+                            <h1>Ludo Game</h1>
+                            <p>Built a digital version of the classic Ludo board game to demonstrate multiplayer
+                                game
+                                logic
+                                and user-friendly design.</p>
+                            <p>Supports 2–4 players, dice rolling with random outcomes, token movement logic, and
+                                win
+                                condition detection.</p>
+                            <p>Mobile-friendly interface ensures smooth gameplay across devices, with
+                                touch-optimized
+                                controls.</p>
+                            
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 54.1%;background-color:#f7df1e"></div>
+                                        <div style="width: 24.6%;background-color:#2196f3"></div>
+                                        <div style="width: 21.3%;background-color:#ff5722"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>54.1%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>24.6%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>21.3%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/ludo" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/ludo" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="ttt">
+                            <h1>Tic-Tac-Toe</h1>
+                            <p>Designed a web-based Tic-Tac-Toe game to practice game logic and interactive UI
+                                development.
+                            </p>
+                            <p>Features a 3x3 grid for two players, win/draw detection, a restart option, and a
+                                simple
+                                AI
+                                for single-player mode.</p>
+                            <p>Fully responsive, providing an intuitive experience on both desktop and mobile
+                                screens.
+                            </p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 50.7%;background-color:#f7df1e"></div>
+                                        <div style="width: 27.8%;background-color:#ff5722"></div>
+                                        <div style="width: 21.5%;background-color:#2196f3"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>50.7%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>27.8%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>21.5%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/ttt" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/ttt" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="simonsays">
+                            <h1>Simon Says</h1>
+                            <p>Developed a memory-based Simon Says game to enhance skills in event handling and
+                                sequence
+                                logic.</p>
+                            <p>Includes four colored buttons with sound cues, increasing sequence lengths, and a
+                                score
+                                tracker for high scores.</p>
+                            <p>Responsive design ensures accessibility and playability on various devices, including
+                                mobiles.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 42.4%;background-color:#f7df1e"></div>
+                                        <div style="width: 40.7%;background-color:#2196f3"></div>
+                                        <div style="width: 16.9%;background-color:#ff5722"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>42.4%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>40.7%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>16.9%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/simonsays" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/simonsays" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="calculator">
+                            <h1>Calculator</h1>
+                            <p>Built a web-based calculator to demonstrate proficiency in handling user inputs and
+                                mathematical operations.</p>
+                            <p>Supports basic arithmetic operations (addition, subtraction, multiplication,
+                                division),
+                                clear/reset functionality, and a history display.</p>
+                            <p>Responsive design ensures usability across desktops, tablets, and smartphones.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 40.5%;background-color:#f7df1e"></div>
+                                        <div style="width: 30.8%;background-color:#ff5722"></div>
+                                        <div style="width: 28.7%;background-color:#2196f3"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>40.5%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>30.8%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>28.7%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/calculator" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/calculator" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="To-Do">
+                            <h1>To-Do List App</h1>
+                            <p>Created a task management application to practice CRUD operations and local storage
+                                in
+                                web
+                                development.</p>
+                            <p>Allows task creation, editing, deletion, and completion status; persists data using
+                                local
+                                storage.</p>
+                            <p>Fully responsive, enabling users to manage tasks seamlessly on any device.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 61.1%;background-color:#f7df1e"></div>
+                                        <div style="width: 31.5%;background-color:#2196f3"></div>
+                                        <div style="width: 7.4%;background-color:#ff5722"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #f7df1e;border-radius:50%">
+                                        </div>JS<p>61.1%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>31.5%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>7.4%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/To-Do" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/To-Do" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="youtube">
+                            <h1>YouTube Clone</h1>
+                            <p>Developed a video streaming platform interface inspired by YouTube to explore video
+                                playback
+                                and UI design.</p>
+                            <p>Includes a video player, thumbnail grid for video selection, and a search bar; likely
+                                uses
+                                mock data or embedded videos.</p>
+                            <p>Mobile-friendly layout ensures optimal viewing and interaction on all devices.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 76.2%;background-color:#ff5722"></div>
+                                        <div style="width: 23.8%;background-color:#2196f3"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>76.2%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>23.8%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/youtube" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/youtube" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="google">
+                            <h1>Google Clone</h1>
+                            <p>Created a search engine interface mimicking Google to practice form handling and API
+                                integration.</p>
+                            <p>Features a search bar with mock results, voice search simulation, and a clean,
+                                minimalistic
+                                design.</p>
+                            <p>Fully responsive, offering a consistent experience across desktop and mobile
+                                browsers.
+                            </p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 59.8%;background-color:#ff5722"></div>
+                                        <div style="width: 40.2%;background-color:#2196f3"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>59.8%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>40.2%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/google" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/google" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+
+                        <div id="instagram">
+                            <h1>Instagram Clone</h1>
+                            <p>Built a social media platform interface inspired by Instagram to demonstrate skills
+                                in
+                                dynamic content rendering.</p>
+                            <p>Includes a feed with image posts, like/comment functionality, and a profile page;
+                                uses
+                                mock
+                                data for posts.</p>
+                            <p>Responsive design ensures smooth navigation and interaction on all screen sizes.</p>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div style="width: 53.4%;background-color:#ff5722"></div>
+                                        <div style="width: 46.6%;background-color:#2196f3"></div>
+                                    </div>
+                                    <div>
+                                        <div style="margin-right: 0.5svh;background-color: #ff5722;border-radius:50%;">
+                                        </div>HTML<p>53.4%</p>
+                                        <div style="margin-right: 0.5svh;background-color: #2196f3;border-radius:50%">
+                                        </div>CSS<p>46.6%</p>
+                                    </div>
+                                </div>
+                                <a href="https://shanmukn21.github.io/instagram" target="_blank">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg>OPEN
+                                </a>
+                                <a href="https://www.github.com/shanmukn21/instagram" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="previewWeb">
+                <div class="container">
+                    <div class="box1">
+                        <div class="iconWeb">
+                            <div></div>
+                        </div>
+                        <div class="title"></div>
+                    </div>
+                    <div class="box2">
+                        <a href="" class="left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-left-iconWeb lucide-arrow-left">
+                                <path d="m12 19-7-7 7-7" />
+                                <path d="M19 12H5" />
+                            </svg></a>
+                        <a href="" class="right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right-iconWeb lucide-arrow-right">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></a>
+                        <div class="restart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-rotate-cw-iconWeb lucide-rotate-cw">
+                                <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+                                <path d="M21 3v5h-5" />
+                            </svg></div>
+                        <div class="adress"><a href="" target="_blank" class="goto"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-square-arrow-out-up-right-iconWeb lucide-square-arrow-out-up-right">
+                                    <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                    <path d="m21 3-9 9" />
+                                    <path d="M15 3h6v6" />
+                                </svg></a>
+                            <div class="linkWeb"></div><a href="" target="_blank" class="code"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-code-iconWeb lucide-code">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <div></div>
+                    </div>
+                    <div class="box4">
+                        <div></div>
+                    </div>
+                    <iframe src="" class="box5" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="connectWeb">
+            <h1>
+                Let's make something amazing together!
+            </h1>
+            <a class="connectbtn" href="mailto:shanmukn21@gmail.com?subject=Hello&body=Hi, want to connect"
+                target="_blank">
+                Connect
+            </a>
+            <div class="quickconnect">
+                <a href='https://github.com/shanmukn21' class="github link"
+                    style="background-image: url(img/github.png); background-size:cover" target="_blank">
+                </a>
+                <a href='https://www.linkedin.com/in/shanmukn21/' class="in link"
+                    style="background-image: url(img/in.png); background-size:cover" target="_blank">
+                </a>
+                <a href='https://x.com/shanmuk_cool' class="x link"
+                    style="background: white;background-image: url(img/x.png); background-size:cover;" target="_blank">
+                </a>
+                <a href='mailto:shanmukn21@gmail.com' class="gmail link"
+                    style="background-image: url(img/gmail.png); background-size:cover" target="_blank">
+                </a>
+            </div>
+            <h3>Crafted with ❤️‍🔥 by Shanmuk</h3>
+        </div>
+    </div>
+    <div class="switch">
+        <input type="checkbox" id="switch">
+        <label for="switch" class="switch-label">
+            <p class="desk">Web</p>
+            <div class="roll">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-smartphone-icon lucide-smartphone">
+                        <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                        <path d="M12 18h.01" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-monitor-icon lucide-monitor">
+                        <rect width="20" height="14" x="2" y="3" rx="2" />
+                        <line x1="8" x2="16" y1="21" y2="21" />
+                        <line x1="12" x2="12" y1="17" y2="21" />
+                    </svg>
+                </div>
+            </div>
+            <p class="mob">Mobile</p>
+        </label>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
