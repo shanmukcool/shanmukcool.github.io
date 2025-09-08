@@ -16,7 +16,7 @@ const web = document.querySelector('.box5');
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 const restart = document.querySelector('.restart');
-const projects = ['spotify', 'RubiksCube', 'ludo', 'ttt', 'simonsays', 'calculator', 'To-Do', 'youtube', 'google', 'instagram'];
+const projects = ['rrm', 'RubiksCube', 'ludo', 'ttt', 'simonsays', 'calculator', 'To-Do', 'spotify', 'youtube', 'google', 'instagram'];
 const source = ['../spotify/index.html', '../cube/web/index.html', '../ludo/web/index.html', '../ttt/web/index.html', '../simonsays.html', '../calculator.html', '../Todo.html', '../../css/youtube.html', '../../css/google/google.html', '../../css/instagram.html'];
 const projectsdiv = document.querySelector('.container');
 
@@ -47,8 +47,11 @@ apps.forEach(app => {
         loading.style.display = 'block';
         preview.style.transform = 'scale(1)';
         setTimeout(() => {
-            // mobileWeb.src = `${source[projects.indexOf(app.classList[0])]}`;
-            mobileWeb.src = `https://shanmukn21.github.io/${app.classList[0]}`;
+            if (app.classList[0] === 'rrm') {
+                mobileWeb.src = `https://rajahmundryrosemilk.com`;
+            } else {
+                mobileWeb.src = `https://shanmukn21.github.io/${app.classList[0]}`;
+            }
         }, 200);
     });
 });
@@ -165,15 +168,19 @@ function updateWeb(project) {
     const code = document.querySelector('.code');
     const iconWeb = document.querySelector('.iconWeb div');
     const linkWeb = document.querySelector('.linkWeb');
-    // web.src = `${source[presetProject]}`;
-    web.src=`https://shanmukn21.github.io/${project}/`;
+    if (project === 'rrm') {
+        web.src = 'https://rajahmundryrosemilk.com';
+        title.innerHTML = 'Rajahmundry Ro';
+        code.href = `https://github.com/shanmukcool/rjyrosemilk`;
+        linkWeb.innerHTML = `rajahmundryrosemilk.com`;
+    } else {
+        web.src = `https://shanmukn21.github.io/${project}/`;
+        title.innerHTML = project;
+        code.href = `https://github.com/shanmukn21/${project}`;
+        linkWeb.innerHTML = `shanmukn21.github.io/${project}/`;
+    }
+    goto.href = web.src;
     iconWeb.style.backgroundImage = `url(img/icons/${project}.png)`;
-    title.innerHTML = project;
-    goto.href=web.src;
-    goto.href = `https://shanmukn21.github.io/${project}/`;
-    code.href = `https://github.com/shanmukn21/${project}`;
-    // linkWeb.innerHTML = web.src;
-    linkWeb.innerHTML = `shanmukn21.github.io/${project}/`;
 }
 
 restart.addEventListener('click', () => {
@@ -193,9 +200,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const currentId = entry.target.id;
             updateWeb(currentId);
-
             presetProject = projects.indexOf(currentId);
-
             left.href = `#${projects[Math.max(presetProject - 1, 0)]}`;
             right.href = `#${projects[Math.min(presetProject + 1, projects.length - 1)]}`;
         }
@@ -208,3 +213,54 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.description-container > div').forEach(section => {
     observer.observe(section);
 });
+
+/* ==== Mobile projects: insert description below each image and toggle on click ==== */
+(function createMobileProjectDescriptions() {
+  // find the mobile screenshot blocks inside .myprojects
+  const mobileScreens = document.querySelectorAll('.myprojects .screenShot');
+
+  mobileScreens.forEach(screen => {
+    // discover the project key from the element's classes (matches your projects array)
+    const classList = Array.from(screen.classList);
+    const projectKey = classList.find(c => projects.includes(c));
+
+    if (!projectKey) return;
+
+    // find the corresponding desktop description element by id
+    const desktopSection = document.querySelector(`.description-container > #${projectKey}`);
+    const mobileDesc = document.createElement('div');
+    mobileDesc.className = 'mobileDesc';
+    mobileDesc.setAttribute('data-project', projectKey);
+
+    // if the desktop description exists, copy its innerHTML; otherwise simple fallback
+    if (desktopSection) {
+      // copy only the content you want to show on mobile. copying innerHTML keeps structure (headings, paragraphs, links)
+      mobileDesc.innerHTML = desktopSection.innerHTML;
+      // Optional: remove heavy elements you don't want duplicated on mobile (e.g., wide iframes). Example:
+      // mobileDesc.querySelectorAll('iframe, .container, .iconWeb, .linkWeb').forEach(el => el.remove());
+    } else {
+      mobileDesc.innerHTML = `<p>No description available for ${projectKey}.</p>`;
+    }
+
+    // insert the description right after the image element
+    screen.after(mobileDesc);
+
+    // click to toggle — close other open descriptions first
+    screen.addEventListener('click', () => {
+      const allDescs = document.querySelectorAll('.myprojects .mobileDesc');
+      allDescs.forEach(d => {
+        if (d !== mobileDesc) d.classList.remove('show');
+      });
+
+      const isVisible = mobileDesc.classList.toggle('show');
+
+      // optional: when opening, scroll the image into view so description is visible
+      if (isVisible) {
+        // small timeout to let the element become visible, then scroll smoothly
+        setTimeout(() => {
+          mobileDesc.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 120);
+      }
+    });
+  });
+})();
