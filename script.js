@@ -16,8 +16,8 @@ const web = document.querySelector('.box5');
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 const restart = document.querySelector('.restart');
-const projects = ['rrm', 'RubiksCube', 'ludo', 'ttt', 'simonsays', 'calculator', 'To-Do', 'spotify', 'youtube', 'google', 'instagram'];
-const source = ['../spotify/index.html', '../cube/web/index.html', '../ludo/web/index.html', '../ttt/web/index.html', '../simonsays.html', '../calculator.html', '../Todo.html', '../../css/youtube.html', '../../css/google/google.html', '../../css/instagram.html'];
+const projects = ['rrm', 'mvr', 'RubiksCube', 'ludo', 'ttt', 'simonsays', 'calculator', 'spotify', 'youtube', 'google', 'instagram'];
+const source = ['../spotify/index.html', '../cube/web/index.html', '../ludo/web/index.html', '../ttt/web/index.html', '../simonsays.html', '../calculator.html', '../../css/youtube.html', '../../css/google/google.html', '../../css/instagram.html'];
 const projectsdiv = document.querySelector('.container');
 
 let activeData = null;
@@ -49,6 +49,8 @@ apps.forEach(app => {
         setTimeout(() => {
             if (app.classList[0] === 'rrm') {
                 mobileWeb.src = `https://rajahmundryrosemilk.com`;
+            } else if (app.classList[0] === 'mvr') {
+                mobileWeb.src = `http://mangovillageresorts.com`;
             } else {
                 mobileWeb.src = `https://shanmukn21.github.io/${app.classList[0]}`;
             }
@@ -170,9 +172,14 @@ function updateWeb(project) {
     const linkWeb = document.querySelector('.linkWeb');
     if (project === 'rrm') {
         web.src = 'https://rajahmundryrosemilk.com';
-        title.innerHTML = 'Rajahmundry Ro';
-        code.href = `https://github.com/shanmukcool/rjyrosemilk`;
+        title.innerHTML = 'RRM';
+        code.href = `https://github.com/rajahmundryrosemilk/rajahmundryrosemilk.github.io`;
         linkWeb.innerHTML = `rajahmundryrosemilk.com`;
+    } else if (project === 'mvr') {
+        web.src = 'http://mangovillageresorts.com';
+        title.innerHTML = 'MVR';
+        code.href = `https://github.com/mangovillageresorts/mangovillageresorts.github.io`;
+        linkWeb.innerHTML = `mangovillageresorts.com`;
     } else {
         web.src = `https://shanmukn21.github.io/${project}/`;
         title.innerHTML = project;
