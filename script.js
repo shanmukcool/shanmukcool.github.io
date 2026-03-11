@@ -176,7 +176,7 @@ function updateWeb(project) {
         code.href = `https://github.com/rajahmundryrosemilk/rajahmundryrosemilk.github.io`;
         linkWeb.innerHTML = `rajahmundryrosemilk.com`;
     } else if (project === 'mvr') {
-        web.src = 'http://mangovillageresorts.com';
+        web.src = 'https://mangovillageresorts.com';
         title.innerHTML = 'MVR';
         code.href = `https://github.com/mangovillageresorts/mangovillageresorts.github.io`;
         linkWeb.innerHTML = `mangovillageresorts.com`;
